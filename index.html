@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekram Developers Ltd Developments | Architectural Excellence</title>
+    <title>Ekram Developer Ltd | Architectural Excellence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #C57B57 0%, #8B5A3C 100%);
+            background: linear-gradient(135deg, #4A5F7F 0%, #2C3E56 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -40,10 +40,10 @@
         }
         
         .glass-effect {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         
         .nav-link {
@@ -58,7 +58,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background: #C57B57;
+            background: #4A5F7F;
             transition: width 0.3s ease;
         }
         
@@ -119,9 +119,9 @@
         }
         
         .service-card:hover {
-            background: #C57B57;
+            background: #4A5F7F;
             color: white;
-            border-color: #C57B57;
+            border-color: #4A5F7F;
             transform: translateY(-5px);
         }
         
@@ -135,16 +135,6 @@
         
         .testimonial-card:hover {
             transform: scale(1.02);
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, #C57B57 0%, transparent 100%);
         }
         
         @keyframes fadeInUp {
@@ -163,13 +153,13 @@
         }
         
         .cta-section {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #2C3E56 0%, #1a2332 100%);
         }
         
         input:focus, textarea:focus, select:focus {
             outline: none;
-            border-color: #C57B57;
-            box-shadow: 0 0 0 3px rgba(197, 123, 87, 0.1);
+            border-color: #4A5F7F;
+            box-shadow: 0 0 0 3px rgba(74, 95, 127, 0.1);
         }
         
         .mobile-menu {
@@ -208,18 +198,18 @@
     <header class="fixed w-full z-50 glass-effect">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded"></div>
-                <span class="text-2xl font-bold gradient-text">Ekram Developers Ltd</span>
+                <div class="w-10 h-10 bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] rounded"></div>
+                <span class="text-2xl font-bold gradient-text">Ekram Developer Ltd</span>
             </div>
             
             <nav class="hidden lg:flex items-center space-x-10 text-sm font-medium">
-                <a href="#home" class="nav-link hover:text-[#C57B57]">Home</a>
-                <a href="#about" class="nav-link hover:text-[#C57B57]">About</a>
-                <a href="#projects" class="nav-link hover:text-[#C57B57]">Projects</a>
-                <a href="#services" class="nav-link hover:text-[#C57B57]">Services</a>
-                <a href="#process" class="nav-link hover:text-[#C57B57]">Process</a>
-                <a href="#testimonials" class="nav-link hover:text-[#C57B57]">Testimonials</a>
-                <a href="#contact" class="bg-[#C57B57] text-white px-6 py-2 rounded-full hover:bg-[#8B5A3C] transition">Contact</a>
+                <a href="#home" class="nav-link hover:text-[#4A5F7F]">Home</a>
+                <a href="#about" class="nav-link hover:text-[#4A5F7F]">About</a>
+                <a href="#projects" class="nav-link hover:text-[#4A5F7F]">Projects</a>
+                <a href="#services" class="nav-link hover:text-[#4A5F7F]">Services</a>
+                <a href="#team" class="nav-link hover:text-[#4A5F7F]">Team</a>
+                <a href="#testimonials" class="nav-link hover:text-[#4A5F7F]">Testimonials</a>
+                <a href="#contact" class="bg-[#4A5F7F] text-white px-6 py-2 rounded-full hover:bg-[#2C3E56] transition">Contact</a>
             </nav>
             
             <button class="lg:hidden text-2xl" onclick="toggleMenu()">☰</button>
@@ -230,13 +220,13 @@
     <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-full h-full bg-white z-40 lg:hidden">
         <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
             <button class="absolute top-6 right-6 text-3xl" onclick="toggleMenu()">×</button>
-            <a href="#home" onclick="toggleMenu()" class="hover:text-[#C57B57]">Home</a>
-            <a href="#about" onclick="toggleMenu()" class="hover:text-[#C57B57]">About</a>
-            <a href="#projects" onclick="toggleMenu()" class="hover:text-[#C57B57]">Projects</a>
-            <a href="#services" onclick="toggleMenu()" class="hover:text-[#C57B57]">Services</a>
-            <a href="#process" onclick="toggleMenu()" class="hover:text-[#C57B57]">Process</a>
-            <a href="#testimonials" onclick="toggleMenu()" class="hover:text-[#C57B57]">Testimonials</a>
-            <a href="#contact" onclick="toggleMenu()" class="bg-[#C57B57] text-white px-8 py-3 rounded-full">Contact</a>
+            <a href="#home" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">Home</a>
+            <a href="#about" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">About</a>
+            <a href="#projects" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">Projects</a>
+            <a href="#services" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">Services</a>
+            <a href="#team" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">Team</a>
+            <a href="#testimonials" onclick="toggleMenu()" class="hover:text-[#4A5F7F]">Testimonials</a>
+            <a href="#contact" onclick="toggleMenu()" class="bg-[#4A5F7F] text-white px-8 py-3 rounded-full">Contact</a>
         </div>
     </div>
 
@@ -249,8 +239,8 @@
                 Crafting premium residential and commercial spaces that redefine luxury living across Bangladesh
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#projects" class="bg-[#C57B57] px-8 py-4 rounded-full hover:bg-[#8B5A3C] transition font-medium">Explore Projects</a>
-                <a href="#contact" class="border-2 border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition font-medium">Schedule Consultation</a>
+                <a href="#projects" class="bg-[#4A5F7F] px-8 py-4 rounded-full hover:bg-[#2C3E56] transition font-medium">Explore Projects</a>
+                <a href="#contact" class="border-2 border-white px-8 py-4 rounded-full hover:bg-white hover:text-[#2C3E56] transition font-medium">Schedule Consultation</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -290,25 +280,25 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">About Ekram Developers Ltd</p>
+                    <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">About Ekram Developer Ltd</p>
                     <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Creating Spaces That Inspire & Endure</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        Founded in 2010, Ekram Developers Ltd Developments has established itself as a premier construction and real estate development company in Bangladesh. We specialize in creating architecturally distinguished residential and commercial properties that seamlessly blend contemporary design with functional excellence.
+                        Founded in 2010, Ekram Developer Ltd has established itself as a premier construction and real estate development company in Bangladesh. We specialize in creating architecturally distinguished residential and commercial properties that seamlessly blend contemporary design with functional excellence.
                     </p>
                     <p class="text-gray-600 mb-8 leading-relaxed">
                         Our commitment to sustainability, structural integrity, and aesthetic sophistication has made us the preferred choice for discerning clients seeking premium developments across Dhaka and beyond.
                     </p>
                     <div class="grid grid-cols-2 gap-6 mb-8">
-                        <div class="border-l-4 border-[#C57B57] pl-4">
+                        <div class="border-l-4 border-[#4A5F7F] pl-4">
                             <h4 class="font-semibold text-lg mb-1">Our Vision</h4>
                             <p class="text-sm text-gray-600">To be Bangladesh's most trusted name in premium real estate development</p>
                         </div>
-                        <div class="border-l-4 border-[#C57B57] pl-4">
+                        <div class="border-l-4 border-[#4A5F7F] pl-4">
                             <h4 class="font-semibold text-lg mb-1">Our Mission</h4>
                             <p class="text-sm text-gray-600">Delivering exceptional quality through innovation and craftsmanship</p>
                         </div>
                     </div>
-                    <a href="#contact" class="inline-block bg-[#C57B57] text-white px-8 py-3 rounded-full hover:bg-[#8B5A3C] transition">Partner With Us</a>
+                    <a href="#contact" class="inline-block bg-[#4A5F7F] text-white px-8 py-3 rounded-full hover:bg-[#2C3E56] transition">Partner With Us</a>
                 </div>
                 <div class="relative">
                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-2xl w-full" alt="Modern Building">
@@ -325,7 +315,7 @@
     <section id="projects" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">Our Portfolio</p>
+                <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">Our Portfolio</p>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Explore our collection of landmark developments that showcase our commitment to architectural excellence</p>
             </div>
@@ -338,7 +328,7 @@
                         <h3 class="text-2xl font-bold mb-2">Skyline Residence</h3>
                         <p class="text-sm mb-3 opacity-90">Uttara, Dhaka</p>
                         <p class="text-sm mb-4 opacity-90">16-story luxury residential complex with 64 premium apartments, rooftop amenities, and smart home integration</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
                     </div>
                 </div>
                 
@@ -349,7 +339,7 @@
                         <h3 class="text-2xl font-bold mb-2">Harmony Tower</h3>
                         <p class="text-sm mb-3 opacity-90">Gulshan, Dhaka</p>
                         <p class="text-sm mb-4 opacity-90">A 22-story mixed-use development featuring premium office spaces and executive residences</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Mixed-Use</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Mixed-Use</span>
                     </div>
                 </div>
                 
@@ -360,7 +350,7 @@
                         <h3 class="text-2xl font-bold mb-2">Crescent Plaza</h3>
                         <p class="text-sm mb-3 opacity-90">Chattogram</p>
                         <p class="text-sm mb-4 opacity-90">Modern commercial hub with 120,000 sq ft of retail and office space</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Commercial</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Commercial</span>
                     </div>
                 </div>
                 
@@ -371,7 +361,7 @@
                         <h3 class="text-2xl font-bold mb-2">Heritage Gardens</h3>
                         <p class="text-sm mb-3 opacity-90">Banani, Dhaka</p>
                         <p class="text-sm mb-4 opacity-90">Exclusive gated community with 28 villas featuring private gardens and club facilities</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
                     </div>
                 </div>
                 
@@ -382,7 +372,7 @@
                         <h3 class="text-2xl font-bold mb-2">Quantum Tech Park</h3>
                         <p class="text-sm mb-3 opacity-90">Gazipur</p>
                         <p class="text-sm mb-4 opacity-90">State-of-the-art IT park with Grade A office spaces and modern infrastructure</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Commercial</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Commercial</span>
                     </div>
                 </div>
                 
@@ -393,13 +383,13 @@
                         <h3 class="text-2xl font-bold mb-2">Azure Heights</h3>
                         <p class="text-sm mb-3 opacity-90">Dhanmondi, Dhaka</p>
                         <p class="text-sm mb-4 opacity-90">Boutique residential tower with 32 ultra-luxury apartments and concierge services</p>
-                        <span class="inline-block bg-white text-[#C57B57] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
+                        <span class="inline-block bg-white text-[#4A5F7F] px-4 py-2 rounded-full text-xs font-medium">Residential</span>
                     </div>
                 </div>
             </div>
             
             <div class="text-center">
-                <a href="#contact" class="inline-block border-2 border-[#C57B57] text-[#C57B57] px-8 py-3 rounded-full hover:bg-[#C57B57] hover:text-white transition">View All Projects</a>
+                <a href="#contact" class="inline-block border-2 border-[#4A5F7F] text-[#4A5F7F] px-8 py-3 rounded-full hover:bg-[#4A5F7F] hover:text-white transition">View All Projects</a>
             </div>
         </div>
     </section>
@@ -408,7 +398,7 @@
     <section id="services" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">What We Offer</p>
+                <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">What We Offer</p>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Comprehensive Services</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">End-to-end solutions for all your real estate and construction needs</p>
             </div>
@@ -416,7 +406,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">🏗️</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">🏗️</div>
                     <h3 class="text-xl font-bold mb-3">Design & Build</h3>
                     <p class="text-gray-600 mb-4">Complete turnkey solutions from architectural design to final construction, ensuring seamless project execution.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -428,7 +418,7 @@
                 
                 <!-- Service 2 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">📊</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">📊</div>
                     <h3 class="text-xl font-bold mb-3">Project Management</h3>
                     <p class="text-gray-600 mb-4">Professional oversight ensuring timely delivery, quality control, and budget optimization throughout the project lifecycle.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -440,7 +430,7 @@
                 
                 <!-- Service 3 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">🎨</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">🎨</div>
                     <h3 class="text-xl font-bold mb-3">Interior Development</h3>
                     <p class="text-gray-600 mb-4">Sophisticated interior design and execution that reflects your vision with contemporary elegance and functionality.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -452,7 +442,7 @@
                 
                 <!-- Service 4 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">🔧</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">🔧</div>
                     <h3 class="text-xl font-bold mb-3">Renovation & Retrofit</h3>
                     <p class="text-gray-600 mb-4">Transforming existing structures with modern upgrades while preserving architectural integrity and enhancing value.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -464,7 +454,7 @@
                 
                 <!-- Service 5 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">🌱</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">🌱</div>
                     <h3 class="text-xl font-bold mb-3">Sustainable Solutions</h3>
                     <p class="text-gray-600 mb-4">Environmentally responsible construction practices incorporating green building technologies and energy efficiency.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -476,7 +466,7 @@
                 
                 <!-- Service 6 -->
                 <div class="service-card bg-white p-8 rounded-2xl">
-                    <div class="service-icon text-4xl mb-4 text-[#C57B57]">🏢</div>
+                    <div class="service-icon text-4xl mb-4 text-[#4A5F7F]">🏢</div>
                     <h3 class="text-xl font-bold mb-3">Property Development</h3>
                     <p class="text-gray-600 mb-4">Strategic real estate development from land acquisition to project completion, maximizing investment returns.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
@@ -493,7 +483,7 @@
     <section id="process" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">How We Work</p>
+                <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">How We Work</p>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Process</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">A systematic approach ensuring excellence at every stage</p>
             </div>
@@ -502,28 +492,28 @@
                 <div class="grid md:grid-cols-4 gap-8">
                     <!-- Step 1 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
                         <h3 class="text-xl font-bold mb-3">Consultation</h3>
                         <p class="text-gray-600 text-sm">Understanding your vision, requirements, and project objectives through detailed discussions</p>
                     </div>
                     
                     <!-- Step 2 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
                         <h3 class="text-xl font-bold mb-3">Design & Planning</h3>
                         <p class="text-gray-600 text-sm">Creating comprehensive designs, obtaining approvals, and developing detailed project timelines</p>
                     </div>
                     
                     <!-- Step 3 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
                         <h3 class="text-xl font-bold mb-3">Construction</h3>
                         <p class="text-gray-600 text-sm">Executing with precision using quality materials, skilled craftsmen, and rigorous quality control</p>
                     </div>
                     
                     <!-- Step 4 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
                         <h3 class="text-xl font-bold mb-3">Handover</h3>
                         <p class="text-gray-600 text-sm">Final inspections, documentation, and seamless project delivery with ongoing support</p>
                     </div>
@@ -532,33 +522,170 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <!-- Team Section -->
+    <section id="team" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">Client Stories</p>
+                <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">Meet Our Team</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Leadership Excellence</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our experienced leadership team brings decades of expertise in construction and real estate development</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Managing Director -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#4A5F7F] to-[#2C3E56] h-80 mb-6 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border-4 border-white/30">
+                                <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-1">Abdur Razzak Dhali</h3>
+                        <p class="text-[#4A5F7F] font-medium mb-2">Managing Director</p>
+                        <p class="text-gray-600 text-sm mb-4">Leading strategic vision and operational excellence with over 15 years of industry experience</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="tel:+8801715400951" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:abdurrazzakdhali2@gmail.com" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Director 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#5A6F8F] to-[#3C4E66] h-80 mb-6 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border-4 border-white/30">
+                                <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-1">Md. Shamim Al Mamun</h3>
+                        <p class="text-[#4A5F7F] font-medium mb-2">Director - Operations</p>
+                        <p class="text-gray-600 text-sm mb-4">Overseeing project execution and quality assurance across all developments</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="tel:+8801707700562" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:h.m.sahamimahmad4390@gmail.com" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Director 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#6A7F9F] to-[#4C5E76] h-80 mb-6 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border-4 border-white/30">
+                                <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-1">A. K. M. Farhan Doza</h3>
+                        <p class="text-[#4A5F7F] font-medium mb-2">Director - Finance</p>
+                        <p class="text-gray-600 text-sm mb-4">Managing financial strategy and investment planning for sustainable growth</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="tel:+8801681712312" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:farhandoza818@gmail.com" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Director 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#7A8FAF] to-[#5C6E86] h-80 mb-6 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border-4 border-white/30">
+                                <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-1">Md. Mahfuzor Rahman</h3>
+                        <p class="text-[#4A5F7F] font-medium mb-2">Director - Business Development</p>
+                        <p class="text-gray-600 text-sm mb-4">Driving strategic partnerships and expanding our market presence</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="tel:+8801866686668" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:mahfuz220221@gmail.com" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#4A5F7F] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">Client Stories</p>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">What Our Clients Say</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Trusted by hundreds of satisfied clients across Bangladesh</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#C57B57] rounded-full flex items-center justify-center text-white font-bold mr-4">MR</div>
+                        <div class="w-12 h-12 bg-[#4A5F7F] rounded-full flex items-center justify-center text-white font-bold mr-4">MR</div>
                         <div>
                             <h4 class="font-bold">Mohammed Rahman</h4>
                             <p class="text-sm text-gray-500">CEO, Rahman Industries</p>
                         </div>
                     </div>
                     <div class="text-yellow-500 mb-3">★★★★★</div>
-                    <p class="text-gray-600 italic">"Ekram Developers Ltd transformed our vision into reality with their Harmony Tower project. Their attention to detail and commitment to quality is unmatched. Highly recommended for premium developments."</p>
+                    <p class="text-gray-600 italic">"Ekram Developer Ltd transformed our vision into reality with their Harmony Tower project. Their attention to detail and commitment to quality is unmatched. Highly recommended for premium developments."</p>
                 </div>
                 
                 <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#C57B57] rounded-full flex items-center justify-center text-white font-bold mr-4">SA</div>
+                        <div class="w-12 h-12 bg-[#4A5F7F] rounded-full flex items-center justify-center text-white font-bold mr-4">SA</div>
                         <div>
                             <h4 class="font-bold">Sadia Ahmed</h4>
                             <p class="text-sm text-gray-500">Homeowner, Skyline Residence</p>
@@ -569,32 +696,33 @@
                 </div>
                 
                 <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#C57B57] rounded-full flex items-center justify-center text-white font-bold mr-4">KH</div>
+                        <div class="w-12 h-12 bg-[#4A5F7F] rounded-full flex items-center justify-center text-white font-bold mr-4">KH</div>
                         <div>
                             <h4 class="font-bold">Kamal Hossain</h4>
                             <p class="text-sm text-gray-500">Director, Tech Solutions Ltd</p>
                         </div>
                     </div>
                     <div class="text-yellow-500 mb-3">★★★★★</div>
-                    <p class="text-gray-600 italic">"The Quantum Tech Park project was delivered on time and within budget. Ekram Developers Ltd's professionalism and expertise made the entire process smooth and stress-free."</p>
+                    <p class="text-gray-600 italic">"The Quantum Tech Park project was delivered on time and within budget. Ekram Developer Ltd's professionalism and expertise made the entire process smooth and stress-free."</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="py-24 bg-white">
+     <!-- Why Choose Us Section -->
+    <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">Why Ekram Developers Ltd</p>
+                    <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">Why Ekram Developer Ltd</p>
                     <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Setting New Standards in Construction Excellence</h2>
                     
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-[#C57B57]/10 rounded-lg flex items-center justify-center text-[#C57B57] text-xl font-bold mr-4 flex-shrink-0">✓</div>
+                            <div class="w-12 h-12 bg-[#4A5F7F]/10 rounded-lg flex items-center justify-center text-[#4A5F7F] text-xl font-bold mr-4 flex-shrink-0">✓</div>
                             <div>
                                 <h4 class="font-bold mb-1">Premium Quality Materials</h4>
                                 <p class="text-gray-600 text-sm">We source only the finest materials from trusted suppliers, ensuring longevity and aesthetic appeal in every project.</p>
@@ -602,7 +730,7 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-[#C57B57]/10 rounded-lg flex items-center justify-center text-[#C57B57] text-xl font-bold mr-4 flex-shrink-0">✓</div>
+                            <div class="w-12 h-12 bg-[#4A5F7F]/10 rounded-lg flex items-center justify-center text-[#4A5F7F] text-xl font-bold mr-4 flex-shrink-0">✓</div>
                             <div>
                                 <h4 class="font-bold mb-1">Expert Team</h4>
                                 <p class="text-gray-600 text-sm">Our team comprises seasoned architects, engineers, and craftsmen with decades of combined experience.</p>
@@ -610,7 +738,7 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-[#C57B57]/10 rounded-lg flex items-center justify-center text-[#C57B57] text-xl font-bold mr-4 flex-shrink-0">✓</div>
+                            <div class="w-12 h-12 bg-[#4A5F7F]/10 rounded-lg flex items-center justify-center text-[#4A5F7F] text-xl font-bold mr-4 flex-shrink-0">✓</div>
                             <div>
                                 <h4 class="font-bold mb-1">Timely Delivery</h4>
                                 <p class="text-gray-600 text-sm">Rigorous project management ensures we meet deadlines without compromising on quality standards.</p>
@@ -618,7 +746,7 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-[#C57B57]/10 rounded-lg flex items-center justify-center text-[#C57B57] text-xl font-bold mr-4 flex-shrink-0">✓</div>
+                            <div class="w-12 h-12 bg-[#4A5F7F]/10 rounded-lg flex items-center justify-center text-[#4A5F7F] text-xl font-bold mr-4 flex-shrink-0">✓</div>
                             <div>
                                 <h4 class="font-bold mb-1">Transparent Communication</h4>
                                 <p class="text-gray-600 text-sm">Regular updates and open dialogue keep you informed at every stage of your project.</p>
@@ -626,7 +754,7 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-[#C57B57]/10 rounded-lg flex items-center justify-center text-[#C57B57] text-xl font-bold mr-4 flex-shrink-0">✓</div>
+                            <div class="w-12 h-12 bg-[#4A5F7F]/10 rounded-lg flex items-center justify-center text-[#4A5F7F] text-xl font-bold mr-4 flex-shrink-0">✓</div>
                             <div>
                                 <h4 class="font-bold mb-1">After-Sales Support</h4>
                                 <p class="text-gray-600 text-sm">Our commitment doesn't end at handover - we provide comprehensive maintenance and support services.</p>
@@ -648,13 +776,13 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section py-24 text-white parallax-section" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');">
+    <section class="cta-section py-24 text-white parallax-section" style="background-image: linear-gradient(rgba(44, 62, 86, 0.9), rgba(26, 35, 50, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
             <p class="text-lg mb-10 opacity-90">Let's discuss how we can bring your vision to life with our expertise and dedication</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-[#C57B57] px-8 py-4 rounded-full hover:bg-[#8B5A3C] transition font-medium">Get a Free Consultation</a>
-                <a href="tel:+8801234567890" class="border-2 border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition font-medium">Call Us Now</a>
+                <a href="#contact" class="bg-[#4A5F7F] px-8 py-4 rounded-full hover:bg-[#5A6F8F] transition font-medium">Get a Free Consultation</a>
+                <a href="tel:+8801715400951" class="border-2 border-white px-8 py-4 rounded-full hover:bg-white hover:text-[#2C3E56] transition font-medium">Call Us Now</a>
             </div>
         </div>
     </section>
@@ -665,7 +793,7 @@
             <div class="grid md:grid-cols-2 gap-16">
                 <!-- Contact Form -->
                 <div>
-                    <p class="text-[#C57B57] uppercase tracking-widest text-sm mb-4 font-medium">Get In Touch</p>
+                    <p class="text-[#4A5F7F] uppercase tracking-widest text-sm mb-4 font-medium">Get In Touch</p>
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's Build Something Extraordinary</h2>
                     <p class="text-gray-600 mb-8">Share your project details and our team will reach out to schedule a personalized consultation.</p>
                     
@@ -715,7 +843,7 @@
                             <textarea required rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3 transition" placeholder="Tell us about your project requirements..."></textarea>
                         </div>
                         
-                        <button type="submit" class="w-full bg-[#C57B57] text-white py-4 rounded-lg hover:bg-[#8B5A3C] transition font-medium">Submit Inquiry</button>
+                        <button type="submit" class="w-full bg-[#4A5F7F] text-white py-4 rounded-lg hover:bg-[#2C3E56] transition font-medium">Submit Inquiry</button>
                     </form>
                 </div>
                 
@@ -726,31 +854,31 @@
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-[#C57B57] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">📍</div>
+                                <div class="w-12 h-12 bg-[#4A5F7F] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">📍</div>
                                 <div>
                                     <h4 class="font-semibold mb-1">Head Office</h4>
-                                    <p class="text-gray-600 text-sm">House 42, Road 15, Block E<br>Banani, Dhaka 1213, Bangladesh</p>
+                                    <p class="text-gray-600 text-sm">56/1 Baitul View (17th Floor)<br>Unite-D, Purana Paltan<br>Dhaka-1000, Bangladesh</p>
                                 </div>
                             </div>
                             
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-[#C57B57] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">📞</div>
+                            <!-- <div class="flex items-start">
+                                <div class="w-12 h-12 bg-[#4A5F7F] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">📞</div>
                                 <div>
                                     <h4 class="font-semibold mb-1">Phone</h4>
-                                    <p class="text-gray-600 text-sm">+880 2 9888 4567<br>+880 1712-345678</p>
+                                    <p class="text-gray-600 text-sm">+880 17154 00951</p>
                                 </div>
-                            </div>
+                            </div> -->
                             
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-[#C57B57] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">✉️</div>
+                                <div class="w-12 h-12 bg-[#4A5F7F] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">✉️</div>
                                 <div>
                                     <h4 class="font-semibold mb-1">Email</h4>
-                                    <p class="text-gray-600 text-sm">info@Ekram Developers Ltd.com.bd<br>projects@Ekram Developers Ltd.com.bd</p>
+                                    <p class="text-gray-600 text-sm">info@ekramdevelopersltd.com</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-[#C57B57] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">🕐</div>
+                                <div class="w-12 h-12 bg-[#4A5F7F] rounded-lg flex items-center justify-center text-white mr-4 flex-shrink-0">🕐</div>
                                 <div>
                                     <h4 class="font-semibold mb-1">Business Hours</h4>
                                     <p class="text-gray-600 text-sm">Sunday - Thursday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Friday: Closed</p>
@@ -759,9 +887,9 @@
                         </div>
                     </div>
                     
-                    <!-- Map Placeholder -->
-                    <div class="rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8095445!2d90.40447!3d23.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ3JzM4LjQiTiA5MMKwMjQnMTYuMSJF!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- Map -->
+                    <div class="rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.386847527661!2d90.41163087595424!3d23.73588017866993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f9558e2c21%3A0x90e23aacb99341d1!2sBaitul%20View!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -769,21 +897,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#1a1a1a] text-gray-300 py-16">
+    <footer class="bg-[#2C3E56] text-gray-300 py-16">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <!-- Company Info -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-[#C57B57] to-[#8B5A3C] rounded"></div>
-                        <span class="text-2xl font-bold text-white">Ekram Developers Ltd</span>
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#4A5F7F] to-[#6A7F9F] rounded"></div>
+                        <span class="text-2xl font-bold text-white">Ekram Developer Ltd</span>
                     </div>
                     <p class="text-sm mb-4">Building spaces that endure. Premium construction and real estate development across Bangladesh.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#C57B57] transition">f</a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#C57B57] transition">in</a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#C57B57] transition">📷</a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#C57B57] transition">▶</a>
+                        <a href="#" class="w-10 h-10 bg-[#1a2332] rounded-full flex items-center justify-center hover:bg-[#4A5F7F] transition">f</a>
+                        <a href="#" class="w-10 h-10 bg-[#1a2332] rounded-full flex items-center justify-center hover:bg-[#4A5F7F] transition">in</a>
+                        <a href="#" class="w-10 h-10 bg-[#1a2332] rounded-full flex items-center justify-center hover:bg-[#4A5F7F] transition">📷</a>
+                        <a href="#" class="w-10 h-10 bg-[#1a2332] rounded-full flex items-center justify-center hover:bg-[#4A5F7F] transition">▶</a>
                     </div>
                 </div>
                 
@@ -791,11 +919,11 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#about" class="hover:text-[#C57B57] transition">About Us</a></li>
-                        <li><a href="#projects" class="hover:text-[#C57B57] transition">Our Projects</a></li>
-                        <li><a href="#services" class="hover:text-[#C57B57] transition">Services</a></li>
-                        <li><a href="#testimonials" class="hover:text-[#C57B57] transition">Testimonials</a></li>
-                        <li><a href="#contact" class="hover:text-[#C57B57] transition">Contact Us</a></li>
+                        <li><a href="#about" class="hover:text-[#4A5F7F] transition">About Us</a></li>
+                        <li><a href="#projects" class="hover:text-[#4A5F7F] transition">Our Projects</a></li>
+                        <li><a href="#services" class="hover:text-[#4A5F7F] transition">Services</a></li>
+                        <li><a href="#team" class="hover:text-[#4A5F7F] transition">Our Team</a></li>
+                        <li><a href="#contact" class="hover:text-[#4A5F7F] transition">Contact Us</a></li>
                     </ul>
                 </div>
                 
@@ -803,11 +931,11 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Our Services</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-[#C57B57] transition">Design & Build</a></li>
-                        <li><a href="#" class="hover:text-[#C57B57] transition">Project Management</a></li>
-                        <li><a href="#" class="hover:text-[#C57B57] transition">Interior Development</a></li>
-                        <li><a href="#" class="hover:text-[#C57B57] transition">Renovation</a></li>
-                        <li><a href="#" class="hover:text-[#C57B57] transition">Property Development</a></li>
+                        <li><a href="#" class="hover:text-[#4A5F7F] transition">Design & Build</a></li>
+                        <li><a href="#" class="hover:text-[#4A5F7F] transition">Project Management</a></li>
+                        <li><a href="#" class="hover:text-[#4A5F7F] transition">Interior Development</a></li>
+                        <li><a href="#" class="hover:text-[#4A5F7F] transition">Renovation</a></li>
+                        <li><a href="#" class="hover:text-[#4A5F7F] transition">Property Development</a></li>
                     </ul>
                 </div>
                 
@@ -816,18 +944,18 @@
                     <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
                     <p class="text-sm mb-4">Subscribe to our newsletter for latest projects and updates.</p>
                     <form class="flex flex-col space-y-2">
-                        <input type="email" placeholder="Your email" class="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-[#C57B57]">
-                        <button type="submit" class="bg-[#C57B57] text-white py-2 rounded-lg hover:bg-[#8B5A3C] transition text-sm font-medium">Subscribe</button>
+                        <input type="email" placeholder="Your email" class="bg-[#1a2332] border border-[#4A5F7F]/30 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-[#4A5F7F]">
+                        <button type="submit" class="bg-[#4A5F7F] text-white py-2 rounded-lg hover:bg-[#5A6F8F] transition text-sm font-medium">Subscribe</button>
                     </form>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-                <p>&copy; 2025 Ekram Developers Ltd Developments. All Rights Reserved.</p>
+            <div class="border-t border-[#4A5F7F]/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2025 Ekram Developer Ltd. All Rights Reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-[#C57B57] transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-[#C57B57] transition">Terms of Service</a>
-                    <a href="#" class="hover:text-[#C57B57] transition">Sitemap</a>
+                    <a href="#" class="hover:text-[#4A5F7F] transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#4A5F7F] transition">Terms of Service</a>
+                    <a href="#" class="hover:text-[#4A5F7F] transition">Sitemap</a>
                 </div>
             </div>
         </div>
@@ -854,9 +982,11 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.7)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
             }
         });
     </script>
